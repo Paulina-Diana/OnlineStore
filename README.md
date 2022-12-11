@@ -1,2 +1,15 @@
-# OnlineStore
-OnlineStore es una aplicación de gestión de un comercio electrónico que plantea una situación real en el ámbito profesional. La finalidad, de este proyecto, es la realización de una aplicación de backend escalable a cualquier empresa de comercio electrónico. 
+# Patron DAO
+## Fuente: 
+- https://www.oracle.com/java/technologies/dataaccessobject.html
+# JDBC
+## Fuente:
+- https://docs.oracle.com/javase/tutorial/jdbc/basics/connecting.html
+- https://docs.oracle.com/javase/tutorial/jdbc/basics/retrieving.html
+
+## JavaFX execution
+
+```mvn clean javafx:run```
+
+## JPA configuration
+
+* check configuration on:  ``src/main/resources/META-INF/persistence.xml``

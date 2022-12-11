@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uoc.onlinestore.controller.OnlineStoreFXController">
+   <children>
+      <BorderPane layoutX="38.0" layoutY="77.0" prefHeight="270.0" prefWidth="531.0">
+         <center>
+            <HBox alignment="TOP_CENTER" prefHeight="98.0" prefWidth="531.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnItem" mnemonicParsing="false" onAction="#viewItem" prefHeight="84.0" prefWidth="99.0" text="Items" textAlignment="CENTER" />
+                  <Button fx:id="btnClient" mnemonicParsing="false" onAction="#viewClient" prefHeight="84.0" prefWidth="99.0" text="Clients" />
+                  <Button fx:id="btnOrder" mnemonicParsing="false" onAction="#viewOrder" prefHeight="84.0" prefWidth="99.0" text="Orders" />
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets top="5.0" />
+               </BorderPane.margin>
+            </HBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="155.0" prefWidth="524.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+            <ImageView fitHeight="80.0" fitWidth="117.0" onContextMenuRequested="#showItem" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@item.png" />
+               </image>
+            </ImageView>
+
+            <ImageView fitHeight="96.0" fitWidth="125.0" onContextMenuRequested="#showClient" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@client.png" />
+               </image>
+            </ImageView>
+
+                  <ImageView fitHeight="96.0" fitWidth="123.0" onContextMenuRequested="#showOrder" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@order.png" />
+                     </image>
+                  </ImageView>
+                  
+
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+
+         </bottom>
+         <left>
+            <Label text="" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Label text="" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <Text fill="#bc2828" strokeType="OUTSIDE" strokeWidth="0.0" text="ONLINE STORE" wrappingWidth="233.7890625" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+         </top>
+      </BorderPane>
+
+   </children>
+</AnchorPane>
